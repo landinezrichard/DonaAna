@@ -1,0 +1,81 @@
+@import "nib"
+@import "normalize.styl"
+// @import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700')
+
+@font-face
+	font-family:"Simplicity";
+	src: url('../fonts/simplicity.ttf');
+	
+@font-face
+	font-family:"FuturaBC";
+	src: url('../fonts/Futurabc.ttf');
+@font-face
+	font-family:"MyriadPro";	
+	src: url('../fonts/MyriadPro-Regular.otf');
+
+$verde = #83B94B
+	
+$naranja = #C75E30
+$naranja1 = #E65F29
+$naranja2 = #EF8D06
+
+$turquesa = #50ABCA
+
+$amarillo = #F4AB22
+
+$gris = #B7B9BA
+
+$marron = #947A00
+
+// *
+// 	border 1px solid red
+
+html
+	font-size 16px
+	// font-family 'Open Sans', sans-serif /* Fuente de google fonts */
+
+body
+	background white
+
+img
+	max-width 100%
+	max-height 100%
+
+a
+	text-decoration none
+	
+.u-centrar
+	margin 0 auto
+	max-width 1064px
+	text-align center
+	
+.u-mainTitle
+	font-family:"FuturaBC";
+	font-weight 700
+	font-size 2.18em
+	color $naranja1
+	
+.u-cVerde
+	color $verde
+.u-cNaranja
+	color $naranja1
+.u-cturquesa
+	color $turquesa
+.u-cAmarillo
+	color $amarillo
+.u-cMarron
+	color $marron
+	
+/*Owl Carousel*/
+@import "owl.carousel.styl"
+@import "owl.theme.styl"
+
+/*HEADER*/
+@import "../components/Header/estilos.styl"
+/*MENU*/
+@import "../components/Menu/estilos.styl"
+/*BANNER*/
+@import "../components/Banner/estilos.styl"
+
+/*EMPRENDIMIENTOS*/
+@import "../components/Emprendimientos/estilos.styl"

@@ -1,0 +1,39 @@
+/*MENU*/
+.Menu
+	display inline-block
+	vertical-align middle
+	float right	
+	
+	&-list
+		display flex
+		height 94px
+		align-items center
+		list-style-type none
+		margin 0
+		padding 0	
+		
+	&-item
+		display inline-block
+		vertical-align middle
+		margin 0 25px
+		
+		&:nth-child(2)
+			width 64px
+		&:nth-child(3)
+			width 136px
+		&:last-child
+			margin-right 0
+	
+	&-link
+		color $naranja
+		font-family:"Simplicity";
+		font-size 1.37em
+		font-weight 500
+		display inline-block
+		width 100%
+		cursor pointer
+		transition all .3s ease
+		
+		&:hover
+			color $verde
+			font-weight 600
