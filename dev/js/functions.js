@@ -21,7 +21,7 @@ $(document).ready(function() {
 	$('.Empre-slide').owlCarousel({
 		navigation : true, // Show next and prev buttons
 		slideSpeed : 300,
-		paginationSpeed : 400,		
+		paginationSpeed : 400,
 		// Navigation
 		navigationText : ['<','>'],
 		rewindNav : true,
@@ -32,8 +32,30 @@ $(document).ready(function() {
 		//Items
 		itemsCustom : [
 			[0, 1],
-			[600, 2],			
+			[600, 2],
 			[1000, 3]
+		]
+	});
+
+	/*slides Aliados*/
+
+	$('.Aliados-list').owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation
+		navigationText : ['<','>'],
+		rewindNav : true,
+		scrollPerPage : true,
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		//Items
+		itemsCustom : [
+			[0, 1],
+			[500, 2],
+			[750,3],
+			[1000, 4]
 		]
 	});
 

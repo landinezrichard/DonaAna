@@ -9,23 +9,35 @@
 @font-face
 	font-family:"FuturaBC";
 	src: url('../fonts/Futurabc.ttf');
+	
+@font-face
+	font-family:"FuturaMC";
+	src: url('../fonts/Futuramc.ttf');
+	
 @font-face
 	font-family:"MyriadPro";	
 	src: url('../fonts/MyriadPro-Regular.otf');
 
 $verde = #83B94B
+$verde2 = #72A09B
 	
 $naranja = #C75E30
 $naranja1 = #E65F29
 $naranja2 = #EF8D06
 
 $turquesa = #50ABCA
+$turquesa2 = #72A7C6
 
 $amarillo = #F4AB22
 
 $gris = #B7B9BA
+$gris2 =#5D5D5D
 
 $marron = #947A00
+$purple = #93278F
+$light_brown = #AE975B
+$light_red = #A64C55
+$dark_gray = #4D4D52
 
 // *
 // 	border 1px solid red
@@ -55,16 +67,30 @@ a
 	font-size 2.18em
 	color $naranja1
 	
+.u-bordePunto
+	width 100%
+	border-top 6px dotted rgba(80,171,202,0.6)
+	text-align center
+	margin 2em 0	
+	
 .u-cVerde
 	color $verde
 .u-cNaranja
-	color $naranja1
+	color $naranja
 .u-cturquesa
 	color $turquesa
 .u-cAmarillo
 	color $amarillo
 .u-cMarron
 	color $marron
+.u-cPurple
+	color $purple
+.u-cLbrown
+	color $light_brown
+.u-cLred
+	color $light_red
+.u-cGray
+	color $dark_gray
 	
 /*Owl Carousel*/
 @import "owl.carousel.styl"
@@ -79,3 +105,12 @@ a
 
 /*EMPRENDIMIENTOS*/
 @import "../components/Emprendimientos/estilos.styl"
+
+/*NEWS*/
+@import "../components/News/estilos.styl"
+
+/*ALIADOS*/
+@import "../components/Aliados/estilos.styl"
+
+/*FOOTER*/
+@import "../components/Footer/estilos.styl"
