@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+
+	/*Flechas navegación sliders*/
+	var arrow_izq ='<span class="icon-chevron-left"></span>';
+	var arrow_der ='<span class="icon-chevron-right"></span>';
+
 	/*Banner Index*/
 
 	$('.Banner').owlCarousel({
@@ -23,7 +28,7 @@ $(document).ready(function() {
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		// Navigation
-		navigationText : ['<','>'],
+		navigationText : [arrow_izq, arrow_der],
 		rewindNav : true,
 		scrollPerPage : true,
 		//Pagination
@@ -44,7 +49,7 @@ $(document).ready(function() {
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		// Navigation
-		navigationText : ['<','>'],
+		navigationText : [arrow_izq, arrow_der],
 		rewindNav : true,
 		scrollPerPage : true,
 		//Pagination
