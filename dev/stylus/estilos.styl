@@ -79,6 +79,7 @@ a
 	color $naranja1
 	
 .u-bordePunto
+	display inline-block
 	width 100%
 	border-top 6px dotted rgba(80,171,202,0.6)
 	text-align center
@@ -111,6 +112,9 @@ a
 	vertical-align top
 	margin 2em 0 2em 32px
 	
+.Main-content
+	margin-top 88px
+	
 /*Owl Carousel*/
 @import "owl.carousel.styl"
 @import "owl.theme.styl"
@@ -136,6 +140,13 @@ a
 
 /*REDES*/
 @import "../components/Redes/estilos.styl"
+
+/*ABOUT*/
+@import "../components/About/estilos.styl"
+
+@media screen and (min-width:840px)
+	.Main-content
+		margin-top 0
 
 @media screen and (min-width:1100px)
 	.Twitter
