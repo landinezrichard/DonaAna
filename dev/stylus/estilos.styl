@@ -36,6 +36,9 @@ $naranja2 = #EF8D06
 $turquesa = #50ABCA
 $turquesa2 = #72A7C6
 
+$turquesa_transparent = rgba(114,165,196,.5)
+$transparent_white = rgba(255,255,255,.5)
+
 $amarillo = #F4AB22
 
 $gris = #B7B9BA
@@ -100,6 +103,14 @@ a
 .u-cGray
 	color $dark_gray
 	
+.Twitter
+	width 307px
+	height 550px
+	background #E5F1F7
+	display none
+	vertical-align top
+	margin 2em 0 2em 32px
+	
 /*Owl Carousel*/
 @import "owl.carousel.styl"
 @import "owl.theme.styl"
@@ -122,3 +133,10 @@ a
 
 /*FOOTER*/
 @import "../components/Footer/estilos.styl"
+
+/*REDES*/
+@import "../components/Redes/estilos.styl"
+
+@media screen and (min-width:1100px)
+	.Twitter
+		display inline-block

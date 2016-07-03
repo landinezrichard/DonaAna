@@ -25,6 +25,7 @@
 		color $gris2
 		max-width 848px
 		display inline-block
+		margin 1rem
 		
 .Footer
 	width 100%
@@ -58,7 +59,7 @@
 			vertical-align middle
 		
 	&-ubiTxt
-		padding 0 50px
+		padding 0 25px
 		vertical-align middle
 	
 	/*Contacto*/
@@ -77,27 +78,27 @@
 		cursor pointer
 		vertical-align middle
 		font-family:"MyriadProC";
-		font-size 2.93em
+		font-size 2.3em
 		position relative
 		border 3px solid white
 		box-sizing border-box
 		margin 16px 32px
 		
-		& .icon-chevron-right			
+		& .icon-chevron-right
 			background white
 			color $verde2
 			display inline-block
 			vertical-align middle
-			width 70px
-			height 70px
-			line-height 70px
+			width 56px
+			height 56px
+			line-height 56px
 		
 	&-contactBtnTxt
-		padding 0 50px
+		padding 0 25px
 		color white
 		display inline-block
 		vertical-align middle
-		line-height 70px
+		line-height 56px
 		
 	/*Social*/
 	&-social
@@ -117,7 +118,7 @@
 			padding-right 18px
 	/*Menu*/
 	&-menu
-		display inline-block
+		display none
 		width 100% 
 		
 		& div
@@ -143,3 +144,42 @@
 		& a
 			color $turquesa2
 			cursor pointer
+@media screen and (min-width:480px)
+	.Footer
+		/*Link Ubicación*/
+		&-ubiTxt
+			padding 0 50px
+		/*Contacto*/	
+			
+		&-contactBtn
+			display inline-block
+			color white
+			cursor pointer
+			vertical-align middle
+			font-family:"MyriadProC";
+			font-size 2.93em
+			position relative
+			border 3px solid white
+			box-sizing border-box
+			margin 16px 32px
+			
+			& .icon-chevron-right
+				background white
+				color $verde2
+				display inline-block
+				vertical-align middle
+				width 70px
+				height 70px
+				line-height 70px
+			
+		&-contactBtnTxt
+			padding 0 50px
+			color white
+			display inline-block
+			vertical-align middle
+			line-height 70px
+@media screen and (min-width:960px)
+	.Footer
+		/*Menu*/
+		&-menu
+			display inline-block

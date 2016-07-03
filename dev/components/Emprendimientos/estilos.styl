@@ -7,9 +7,6 @@
 	&-slide
 		width 100%
 
-	&-slide > *
-		border 1px solid red
-
 	&-slideItem
 		display inline-block
 		width 308px
@@ -39,6 +36,7 @@
 	color $verde
 	opacity 1
 	padding 0
+	margin 0
 	border-radius inherit
 	background transparent
 	
@@ -47,7 +45,14 @@
 	display block
 	
 .Empre-slide .owl-controls .owl-buttons .owl-prev 
-	left -40px
+	left 0
 
 .Empre-slide .owl-controls .owl-buttons .owl-next
-	right -40px
+	right 0
+	
+@media screen and (min-width:1160px)
+	.Empre-slide .owl-controls .owl-buttons .owl-prev 
+		left -40px
+
+	.Empre-slide .owl-controls .owl-buttons .owl-next
+		right -40px

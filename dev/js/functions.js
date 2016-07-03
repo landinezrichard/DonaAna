@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	/*Mostrar Menu en Movil*/
+	$('.Menu-btn').click(function(event){
+		event.preventDefault();
+		$('.Menu').slideToggle();
+	});
+
 
 	/*Flechas navegación sliders*/
 	var arrow_izq ='<span class="icon-chevron-left"></span>';

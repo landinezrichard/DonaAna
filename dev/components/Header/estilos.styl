@@ -2,10 +2,16 @@
 
 .Header
 	overflow auto
+	background white
+	position fixed
+	top 0
+	left 0
+	right 0
+	z-index 10
 	&-logo
 		cursor pointer
 		display inline-block
-		margin 8px 12px
+		margin 8px 0 8px 12px
 		float left
 		vertical-align middle
 
@@ -17,3 +23,10 @@
 		padding 0
 		position absolute
 		width 1px
+		
+@media screen and (min-width:840px)
+	.Header
+		position static
+		&-logo
+			margin 8px 12px
+			
