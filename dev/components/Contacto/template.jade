@@ -1,0 +1,34 @@
+div.u-centrar
+	h2.u-mainTitle
+		|	CONTÁCTANOS
+section.Contacto
+	div.u-centrar
+		div.u-halfColumn
+			form
+				fieldset
+					label.input-label(for="nombre")
+						|	Nombre:
+					input(type="text", name="nombre", required, autofocus)
+				fieldset
+					label.input-label(for="email")
+						|	E-mail:
+					input(type="email", name="email", required)
+				fieldset
+					label.input-label(for="tel")
+						|	Tel/Cel:
+					input(type="text", name="tel")
+				fieldset
+					label.input-label(for="ciudad")
+						|	Ciudad:
+					input(type="text", name="ciudad")
+				fieldset
+					label.textarea-label(for="mensaje")
+						|	Mensaje:
+					textarea(name="mensaje", required)
+				div.Contacto-btnContainer
+					a.Contacto-btn(href="")
+						span.Contacto-btnTxt
+							|	Enviar
+						span.icon-mail
+		div.Contacto-right.u-halfColumn
+			img(src="http://lorempixel.com/524/524/")
