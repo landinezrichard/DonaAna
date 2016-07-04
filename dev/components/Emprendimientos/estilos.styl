@@ -31,6 +31,61 @@
 	&-list
 		& .Empre-slideItem
 			margin 20px
+	
+	/*Interna "emprendimientos_int.html"*/
+	&-int
+		width 95%
+		margin 0 2.5%
+		text-align justify
+		
+		& p
+			font-size 1.25em
+			font-weight 400
+			font-family:"MyriadPro";
+			color black		
+		
+	&-intImg	
+		text-align center
+		& img
+			vertical-align bottom
+			
+	&-intContact
+		text-align center
+	&-intContactTxt
+		font-family:"MyriadProBC";
+		font-weight 700
+		font-size 1.87em
+		color $verde
+		text-align center
+		margin 7px 0
+		
+	&-intContactBtn
+		display inline-block
+		color $verde
+		cursor pointer
+		vertical-align middle
+		font-family:"MyriadProC";
+		font-size 2.4em
+		position relative
+		border 3px solid $verde
+		box-sizing border-box
+		margin 7px
+		text-align center
+		
+		& .icon-chevron-right
+			background $verde
+			color white
+			display inline-block
+			vertical-align middle
+			width 50px
+			height 50px
+			line-height 50px
+	&-intContactBtnTxt
+		padding 0 25px
+		color $verde
+		display inline-block
+		vertical-align middle
+		line-height 50px
 		
 
 /*Contoles Owl*/
@@ -55,6 +110,21 @@
 
 .Empre-slide .owl-controls .owl-buttons .owl-next
 	right 0
+	
+@media screen and (min-width:960px)
+	.Empre
+		/*Interna "emprendimientos_int.html"*/
+		&-int
+			& .u-halfColumn:first-child
+				width 50%
+				margin-right 2.5%
+	
+@media screen and (min-width:1100px)
+	.Empre
+		/*Interna "emprendimientos_int.html"*/
+		&-int
+			width 100%
+			margin 0
 	
 @media screen and (min-width:1160px)
 	.Empre-slide .owl-controls .owl-buttons .owl-prev 

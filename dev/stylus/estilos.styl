@@ -23,6 +23,10 @@
 	font-family:"MyriadProC";
 	src: url('../fonts/MyriadPro-Cond.otf');
 	
+@font-face
+	font-family:"MyriadProBC";
+	src: url('../fonts/MyriadPro-BoldCond.otf');
+	
 /*ICONOS COMO FUENTES*/
 @import "iconfonts.styl"
 
@@ -84,13 +88,19 @@ video, object, embed, iframe
 	font-weight 700
 	font-size 2.18em
 	color $naranja1
+
+.u-subTitle
+	font-family:"FuturaBC";
+	font-weight 700
+	font-size 1.62em
+	margin-top 10px
 	
 .u-bordePunto
 	display inline-block
 	width 100%
 	border-top 6px dotted rgba(80,171,202,0.6)
 	text-align center
-	margin 2em 0	
+	margin 2em 0
 	
 .u-cVerde
 	color $verde
@@ -165,6 +175,12 @@ video, object, embed, iframe
 @media screen and (min-width:840px)
 	.Main-content
 		margin-top 0
+
+@media screen and (min-width:960px)
+	.u-halfColumn
+		display inline-block
+		width 47%
+		vertical-align top
 
 @media screen and (min-width:1100px)
 	.Twitter
