@@ -112,4 +112,25 @@ $(document).ready(function() {
 		]
 	});
 
+	/*Carrusel "noticias"*/
+
+	$('.News-list').owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation
+		navigationText : [arrow_izq, arrow_der],
+		rewindNav : true,
+		scrollPerPage : true,
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		//Items
+		itemsCustom : [
+			[0, 1],
+			[720, 2],
+			[1024, 3]
+		]
+	});
+
 });

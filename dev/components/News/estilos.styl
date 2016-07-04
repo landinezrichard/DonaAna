@@ -50,6 +50,102 @@
 			font-weight 700
 			font-size 1.37em
 			color $gris2
+			
+	/*"noticias.html"*/
+	&-destacada
+		width 95%
+		margin 0 2.5%
+		text-align justify
+		
+		& .u-subTitle
+			font-size 2.18em
+			
+		& p
+			font-size 1.87em
+			font-weight 400
+			font-family:"MyriadPro";
+			color $gris2
+			
+	&-destacadaBtn
+		text-align center
+	&-btn
+		display inline-block		
+		cursor pointer
+		margin 8px
+		font-family:"MyriadProC";
+		font-size 2.4em
+	
+	&-btnTxt1
+	&-btnTxt2
+		padding 10px 7px 3px 13px
+		border 3px solid $turquesa
+		display inline-block
+		
+	&-btnTxt1
+		color $turquesa
+		background white
+	&-btnTxt2
+		color white
+		background $turquesa
+		padding 10px 13px 3px 3px
+		
+	&-list
+		margin-bottom 32px
+		width 100%
+		display inline-block
+		
+	&-item
+		display inline-block
+		width 308px		
+		text-align center
+		margin 2px
+		vertical-align middle
+		cursor pointer
+		
+		& figure
+			width 308px
+			height 200px
+			margin 0
+			display inline-block
+	
+		& img
+			vertical-align bottom
+			
+	&-title
+		font-weight 700
+		font-size 1.5em
+		font-family:"FuturaBC";
+		margin 16px 0
+	
+	&-descMin
+		color $gris
+		font-size 1.12em
+		font-weight 400
+		font-family:"MyriadPro";
+		margin 0
+/*Contoles Owl*/
+
+.News-list .owl-controls .owl-buttons div
+	position absolute
+	top 35%
+	font-size 3em
+	color $verde
+	opacity 1
+	padding 0
+	margin 0
+	border-radius inherit
+	background transparent	
+
+.News-list .owl-controls .owl-buttons div span
+	vertical-align middle
+	display block	
+
+.News-list .owl-controls .owl-buttons .owl-prev 
+	left 0
+
+.News-list .owl-controls .owl-buttons .owl-next
+	right 0
+
 @media screen and (min-width:600px)
 	.News
 		&-actualBottom
@@ -68,3 +164,25 @@
 		/*actualidad index*/
 		&-actualTitle
 			font-size 2.5em
+
+@media screen and (min-width:960px)
+	.News
+		/*"noticias.html"*/
+		&-destacada
+			& .u-halfColumn:first-child
+				width 50%
+				margin-right 2.5%
+			
+@media screen and (min-width:1100px)
+	.News
+		/*"noticias.html"*/
+		&-destacada
+			width 100%
+			margin 0
+
+@media screen and (min-width:1160px)
+	.News-list .owl-controls .owl-buttons .owl-prev 
+		left -40px
+
+	.News-list .owl-controls .owl-buttons .owl-next
+		right -40px
