@@ -11,7 +11,7 @@ $(document).ready(function() {
 	var arrow_izq ='<span class="icon-chevron-left"></span>';
 	var arrow_der ='<span class="icon-chevron-right"></span>';
 
-	/*Banner Index*/
+	/*Banner "Index"*/
 
 	$('.Banner').owlCarousel({
 		navigation : false, // Show next and prev buttons
@@ -27,7 +27,7 @@ $(document).ready(function() {
 		paginationNumbers: false
 	});
 
-	/*slides Emprendimientos*/
+	/*slides "Emprendimientos"*/
 
 	$('.Empre-slide').owlCarousel({
 		navigation : true, // Show next and prev buttons
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		]
 	});
 
-	/*slides Aliados*/
+	/*slides "Aliados"*/
 
 	$('.Aliados-list').owlCarousel({
 		navigation : true, // Show next and prev buttons
@@ -67,6 +67,48 @@ $(document).ready(function() {
 			[500, 2],
 			[750,3],
 			[1000, 4]
+		]
+	});
+
+	/*Carrusel imagenes "quienes somos"*/
+
+	$('.About-fotos').owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation
+		navigationText : [arrow_izq, arrow_der],
+		rewindNav : true,
+		scrollPerPage : true,
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		//Items
+		itemsCustom : [
+			[0, 1],
+			[720, 2],
+			[1024, 3]
+		]
+	});
+
+	/*Carrusel videos "quienes somos"*/
+
+	$('.About-videos').owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation
+		navigationText : [arrow_izq, arrow_der],
+		rewindNav : true,
+		scrollPerPage : true,
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		//Items
+		itemsCustom : [
+			[0, 1],
+			[720, 2],
+			[1024, 3]
 		]
 	});
 

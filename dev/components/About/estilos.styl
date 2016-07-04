@@ -11,6 +11,63 @@
 		font-weight 400
 		font-size 1.25em
 		color black
+		
+	&-fotosItem
+		width 308px
+		height 264px
+		display inline-block
+		cursor pointer
+		vertical-align middle
+		
+		& figure
+			margin 0
+		
+		& img
+			display block
+			
+		& figcaption
+			margin 10px 0
+			
+	&-videosItem		
+		display inline-block
+		vertical-align middle
+		width 308px
+		height 264px		
+		
+		& span
+			display inline-block
+			margin 10px 0
+	&-videosC
+		position relative
+		width 308px
+		height 200px
+			
+/*Contoles Owl*/
+
+.About-fotos .owl-controls .owl-buttons div
+.About-videos .owl-controls .owl-buttons div
+	position absolute
+	top 30%
+	font-size 3em
+	color $verde
+	opacity 1
+	padding 0
+	margin 0
+	border-radius inherit
+	background transparent
+	
+.About-fotos .owl-controls .owl-buttons div span
+.About-videos .owl-controls .owl-buttons div span
+	vertical-align middle
+	display block
+	
+.About-fotos .owl-controls .owl-buttons .owl-prev
+.About-videos .owl-controls .owl-buttons .owl-prev 
+	left 0
+
+.About-fotos .owl-controls .owl-buttons .owl-next
+.About-videos .owl-controls .owl-buttons .owl-next
+	right 0
 	
 @media screen and (min-width:800px)
 	.About		
@@ -23,3 +80,12 @@
 @media screen and (min-width:1100px)
 	.About
 		width 100%
+		
+@media screen and (min-width:1160px)
+	.About-fotos .owl-controls .owl-buttons .owl-prev
+	.About-videos .owl-controls .owl-buttons .owl-prev
+		left -40px
+
+	.About-fotos .owl-controls .owl-buttons .owl-next
+	.About-videos .owl-controls .owl-buttons .owl-next
+		right -40px
