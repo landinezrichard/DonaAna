@@ -123,6 +123,82 @@
 		font-weight 400
 		font-family:"MyriadPro";
 		margin 0
+		
+	/*Interna*/
+	&-int
+		width 95%
+		margin 0 2.5%
+		text-align justify
+		
+		& p
+			color black
+			font-size 1.25em
+			font-weight 400
+			font-family:"MyriadPro";
+		
+	&-info
+		font-weight 700
+		font-size 1.12em
+		font-family:"FuturaBC";
+		
+	&-redesTxt
+		font-family:"FuturaBC";
+		font-weight 700
+		font-size 1.87em
+		margin 14px 0
+		
+	&-redes
+		text-align center
+	
+	&-redesBtn
+		display inline-block
+		cursor pointer
+		margin 15px		
+		box-sizing border-box
+		vertical-align middle
+		width 120px
+		height 36px
+		
+		&:nth-child(1)
+			border 3px solid $azul_face
+			color  $azul_face
+		&:nth-child(2)
+			border 3px solid $azul_twitter
+			color $azul_twitter
+		&:nth-child(3)
+			border 3px solid $rojo_gooplus
+			color $rojo_gooplus
+			
+		& .icon-facebook2
+		& .icon-twitter
+		& .icon-google-plus3
+			display inline-block
+			vertical-align middle
+			width 32px
+			height 32px
+			font-size 22px
+			line-height 32px
+			color white
+			float left
+			
+		& .icon-facebook2
+			background $azul_face
+			
+		& .icon-twitter
+			background $azul_twitter
+			
+		& .icon-google-plus3
+			background $rojo_gooplus
+		
+	&-redesBtnTxt
+		font-size .99em
+		font-weight 400
+		font-family:"MyriadPro";
+		display inline-block
+		vertical-align middle
+		line-height 32px
+		
+		
 /*Contoles Owl*/
 
 .News-list .owl-controls .owl-buttons div
@@ -172,11 +248,17 @@
 			& .u-halfColumn:first-child
 				width 50%
 				margin-right 2.5%
+		/*interna*/
+		&-int
+			& .u-halfColumn:first-child
+				width 50%
+				margin-right 2.5%
 			
 @media screen and (min-width:1100px)
 	.News
 		/*"noticias.html"*/
 		&-destacada
+		&-int
 			width 100%
 			margin 0
 
