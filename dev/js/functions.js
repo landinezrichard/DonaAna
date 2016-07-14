@@ -63,11 +63,13 @@ $(document).ready(function() {
 		paginationNumbers: false,
 		//Items
 		itemsCustom : [
-			[0, 1],
-			[500, 2],
-			[750,3],
-			[1000, 4]
-		]
+			[0, 2],
+			[500, 3],
+			[750,4],
+			[1000, 5]
+		],
+		itemsScaleUp:true,
+		items: 7
 	});
 
 	/*Carrusel imagenes "quienes somos"*/
@@ -131,6 +133,22 @@ $(document).ready(function() {
 			[720, 2],
 			[1024, 3]
 		]
+	});
+
+	/*Album "interna Emprendimientos"*/
+
+	$('.Empre-intImgAlbum').owlCarousel({
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation		
+		rewindNav : true,		
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		singleItem:true,
+		transitionStyle : 'fadeUp',
+		autoPlay: 2000
 	});
 
 });
