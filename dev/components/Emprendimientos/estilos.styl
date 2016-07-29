@@ -27,7 +27,87 @@
 		font-family:"MyriadPro";
 		margin 0
 		
-	/*Listado "emprendimientos.html"*/		
+	/*Slider Redondo index*/
+		
+	&-main
+		width 100%
+		position relative
+	
+	&-center
+		display inline-block
+		margin 10% 0 15%
+		width 100%
+		max-width 420px
+	
+	&-round
+		width 100%
+	&-roundItem
+		display inline-block
+		width 50%
+		max-width 260px
+		cursor pointer
+		text-align center
+		margin 10px 40px
+		
+		& img
+			vertical-align bottom
+			width 260px
+		
+		& .Empre-title
+			margin 20px 0
+			font-size 1.8em
+			
+	&-circle
+		display inline-block
+		width 14%
+		max-width 128px
+		cursor pointer
+		text-align center
+		position absolute
+		
+		& img
+			vertical-align bottom
+			width 106px
+		
+		& .Empre-title
+			display none
+			margin 8px 0
+			font-size 1.2em
+
+	/*Circulos slide redondo*/
+	&-circle:nth-child(2)
+		top 0
+		left 22.2%
+	&-circle:nth-child(10)
+		top 0
+		right 22.2%
+		
+	&-circle:nth-child(3)
+		top 22%
+		left 7.14%
+	&-circle:nth-child(9)
+		top 22%
+		right 7.14%
+	
+	&-circle:nth-child(4)
+		bottom 30%
+		left 9.14%
+	&-circle:nth-child(8)
+		bottom 30%
+		right 9.14%
+		
+	&-circle:nth-child(5)
+		bottom 11%
+		left 25%
+	&-circle:nth-child(7)
+		bottom 11%
+		right 25%
+	
+	&-circle:nth-child(6)
+		bottom 4%
+		left calc(50% - 7%)
+		
+	/*Listado "emprendimientos.html"*/
 	&-list
 		& .Empre-slideItem
 			margin 20px
@@ -47,7 +127,7 @@
 			font-family:"MyriadPro";
 			color black
 		
-	&-intImg	
+	&-intImg
 		text-align center
 	&-intImgAlbum
 		display inline-block
@@ -98,7 +178,7 @@
 		display inline-block
 		vertical-align middle
 		line-height 50px
-		
+
 
 /*Contoles Owl*/
 
@@ -123,8 +203,51 @@
 .Empre-slide .owl-controls .owl-buttons .owl-next
 	right 0
 	
+.Empre-round .owl-controls .owl-buttons div
+	position absolute
+	top 37%
+	font-size 4.5em
+	color $verde
+	opacity 1
+	padding 0
+	margin 0
+	border-radius inherit
+	background transparent
+	
+.Empre-round .owl-controls .owl-buttons div span
+	vertical-align middle
+	display block
+	
+.Empre-round .owl-controls .owl-buttons .owl-prev 
+	left 0
+
+.Empre-round .owl-controls .owl-buttons .owl-next
+	right 0
+
+@media screen and (min-width:800px)
+	.Empre
+		&-roundItem
+			& .Empre-title
+				margin 20px 0
+				font-size 2.4em
+		&-circle
+			& .Empre-title
+				display block
+				font-size 1em
+
+@media screen and (min-width:932px)
+	.Empre
+		&-roundItem
+			width auto
+		&-circle:nth-child(6)
+			left calc(50% - 64px)
+	
 @media screen and (min-width:960px)
 	.Empre
+		&-circle
+			& .Empre-title
+				font-size 1.2em
+
 		/*Interna "emprendimientos_int.html"*/
 		&-int
 			& .u-halfColumn:first-child

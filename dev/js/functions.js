@@ -48,6 +48,29 @@ $(document).ready(function() {
 		]
 	});
 
+	/*slides Redondo "Emprendimientos Index"*/
+
+	$('.Empre-round').owlCarousel({
+		navigation : true, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		// Navigation
+		navigationText : [arrow_izq, arrow_der],
+		rewindNav : true,
+		scrollPerPage : true,
+		//Pagination
+		pagination : false,
+		paginationNumbers: false,
+		singleItem:true		
+	});
+
+	/*Navegacion OWl "Circulos Index"*/
+	$('.Empre-main').on('click','.Empre-circle',function(event){
+		event.preventDefault();
+		var index = $(this).attr('data-index');
+		$('.Empre-round').trigger("owl.goTo",index);
+	});
+
 	/*slides "Aliados"*/
 
 	$('.Aliados-list').owlCarousel({
