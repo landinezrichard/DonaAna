@@ -174,4 +174,16 @@ $(document).ready(function() {
 		autoPlay: 2000
 	});
 
+	/*Abrir Lightbox Mapas*/
+
+	$('a.Footer-ubiLink').on('click',function(event){
+		event.preventDefault();
+		$(this).modal("show");
+	});
+
+	$('a.Contacto-right.u-halfColumn').on('click',function(event){
+		event.preventDefault();
+		$(this).modal("show");
+	});
+
 });
