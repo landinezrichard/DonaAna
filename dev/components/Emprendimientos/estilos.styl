@@ -35,7 +35,7 @@
 	
 	&-center
 		display inline-block
-		margin 10% 0 15%
+		margin 0
 		width 100%
 		max-width 420px
 	
@@ -43,22 +43,22 @@
 		width 100%
 	&-roundItem
 		display inline-block
-		width 50%
-		max-width 260px
+		// width 50%
+		max-width 310px
 		cursor pointer
 		text-align center
 		margin 10px 40px
 		
 		& img
 			vertical-align bottom
-			width 260px
+			width 215px
 		
 		& .Empre-title
 			margin 20px 0
 			font-size 1.8em
 			
 	&-circle
-		display inline-block
+		display none
 		width 14%
 		max-width 128px
 		cursor pointer
@@ -76,10 +76,10 @@
 
 	/*Circulos slide redondo*/
 	&-circle:nth-child(2)
-		top 0
+		top 5%
 		left 22.2%
 	&-circle:nth-child(10)
-		top 0
+		top 5%
 		right 22.2%
 		
 	&-circle:nth-child(3)
@@ -205,7 +205,7 @@
 	
 .Empre-round .owl-controls .owl-buttons div
 	position absolute
-	top 37%
+	top 55%
 	font-size 4.5em
 	color $verde
 	opacity 1
@@ -224,21 +224,20 @@
 .Empre-round .owl-controls .owl-buttons .owl-next
 	right 0
 
-@media screen and (min-width:800px)
+@media screen and (min-width:932px)
 	.Empre
+		&-center
+			margin-bottom 25%
 		&-roundItem
+			width auto
 			& .Empre-title
 				margin 20px 0
 				font-size 2.4em
 		&-circle
+			display inline-block
 			& .Empre-title
 				display block
 				font-size 1em
-
-@media screen and (min-width:932px)
-	.Empre
-		&-roundItem
-			width auto
 		&-circle:nth-child(6)
 			left calc(50% - 64px)
 	
